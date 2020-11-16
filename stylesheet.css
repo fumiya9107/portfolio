@@ -203,223 +203,157 @@ input, select {
     vertical-align:middle;
 }
 
+body{
+  width:100%;
+  margin: 0 auto;
+}
+
 /*home*/
 #home header{
+  text-align: center;
+  height:80px;
+  position: fixed;
+  background-color: black;
   width:100%;
+
+}
+
+.home_contents{
+  height:100vh;
   text-align: center;
-  height:300px;
+  padding-top: 350px;
 }
 
-#home header ul li{
-  display: inline-block;
-  line-height: 300px;
-  padding: 0 20px;
-}
-
-header ul li a{
+.home_contents h1{
   color:white;
-}
-
-header ul li a:hover{
-  border-bottom: 1px solid white;
+  font-size: 40px;
 
 }
-.home-contents{
-  text-align: center;
-  margin-top: 5%;
-}
 
-.home-contents h1{
-  font-size: 3.5rem;
-  letter-spacing: 10px;
-  padding-bottom: 20px;
+.home_contents p{
   color:white;
-}
-
-.home-contents p{
   font-size: 1.5rem;
-  letter-spacing: 10px;
-  color:white;
+  padding-top: 5px;
 }
+
+
+header nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header nav ul li a{
+  color:white;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover{
+  border-bottom: 1px solid white;
+}
+
 
 #home{
   background-color: black;
-  height:100vh;
-}
-
-main{
-  height:150vh;
 }
 
 /*about*/
-.about_title{
-  padding-top: 100px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 1.5rem;
+.about{
+  background-image: url(image/beiz1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
 }
 
 
 .about_visual_contents{
-  border: 1px solid black;
-  padding:10px 0 10px 0;
-  margin:0 10px;
-  width: 450px;
-  margin: 0 auto;
-}
-
-.name{
-  padding-bottom: 5px;
-}
-
-.born{
-  border-bottom: 1px solid black;
-  padding-bottom:10px;
-}
-
-.skill{
-  padding-top: 10px;
-}
-
-.skill_contents{
-  padding-top: 5px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
-}
-
-.pr{
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-#about header{
-  width:100%;
   text-align: center;
-  height:150px;
+
 }
 
-#about header ul li{
-  display: inline-block;
-  line-height: 150px;
-  padding: 0 20px;
+.about_contents_img{
+  text-align: center;
+}
+.about_contents_img img{
+  width:60%;
+  border-radius: 50%;
+  margin-top: 100px;
 }
 
-#about{
-  background-color: black;
-  height:150px;
+.about_visual_contents h1{
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color:white;
+}
+.about_visual_contents p{
+  line-height: 30px;
+  color:white;
+
 }
 
 /*work*/
-.work_title{
-  padding-top: 100px;
-  margin-bottom: 50px;
+.work{
+  background-color: #EEEEEE;
+  padding-bottom: 50px;
+}
+
+.work h1{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 10px;
+}
+
+.work_text{
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.work_contents_img{
   text-align: center;
 }
 
-.work_title h1{
-  font-size: 1.5rem;
-}
-
-.work_contents{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap:30px;
-}
-
-.work_visual_contents{
-  text-align: center;
-  display: block;
+.work_contents_img img{
+  width:200px;
+  padding-top: 40px;
 }
 
 .work_visual_contents p{
-  padding-top: 20px;
-}
-
-.work_visual_contents img{
-  width:200px;
-  padding-bottom: 20px;
-}
-
-.work_visual_contents a{
+  text-align: center;
   color:black;
+  padding-top: 10px;
 }
 
-.work_visual_contents a:hover{
-  color:#a9a9a9;
-}
-
-#work header{
-  width:100%;
+.contact{
+  padding-top: 150px;
+  padding-bottom: 100px;
   text-align: center;
-  height:150px;
-  background-color: black;
+  background-color: #EEEEEE;
+}
+.contact h1{
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
-#work header ul li{
-  display: inline-block;
-  line-height: 150px;
-  padding: 0 20px;
-}
-#work{
-  height:100vh;
+.contact p{
+  padding-bottom: 100px;
 }
 
-
-/*contact*/
-
-.contact_title{
-  padding-top: 100px;
-  margin-bottom: 50px;
-  text-align: center;
+iframe{
+  width:400px;
 }
-
-.contact_title h1{
-  font-size: 1.5rem;
-}
-.contact_text{
-  text-align: center;
-  margin-bottom: 50px;
-}
-#contact header{
-  width:100%;
-  text-align: center;
-  height:150px;
-}
-
-#contact header ul li{
-  display: inline-block;
-  line-height: 150px;
-  padding: 0 20px;
-}
-#contact{
-  background-color: black;
-  height:150px;
-}
-
-/*footer*/
 
 footer{
   height:100px;
   background-color: black;
 }
 
-footer nav{
-  line-height: 100px;
-  text-align: left;
-}
-
-footer nav ul li{
-  display: inline-block;
-  padding:0 10px;
-}
-
-footer nav ul li a{
+.footer_contents{
   color:white;
-  font-size: 0.8rem;
-}
-
-footer nav ul li a:hover{
-  border-bottom: 1px solid white;
+  line-height: 100px;
+  text-align: center;
 }
 
 a{
@@ -431,92 +365,49 @@ li{
 }
 /*タブレット版*/
 @media(min-width:768px){
-  /*home*/
-  #home nav ul li{
-    padding:0 40px;
+  header nav ul li{
+    padding-left: 80px;
+    padding-right: 80px;
   }
-
   /*about*/
-  #about nav ul li{
-    padding:0 40px;
+
+  .about_contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
   }
 
-  /*work*/
-  #about nav ul li{
-    padding:0 40px;
-  }
-
-  /*contact*/
-  #contact nav ul li{
-    padding:0 40px;
-  }
-}
-
-  /*footer*/
-  footer nav ul li{
-    padding: 0 30px;
-  }
-
-
-@media(min-width:1000px){
-  /*home*/
-  #home nav ul li{
-    padding:0 80px;
-  }
-
-  /*about*/
-  #about nav ul li{
-    padding:0 80px;
-  }
-
-  .about_title{
-    max-width: 1000px;
-    margin: 50px auto 80px auto;
-  }
-
-  .about_title h1{
-    font-size: 2.0rem;
+  .about_contents_img img{
+    width:300px;
   }
 
   .about_visual_contents{
-    width:500px;
+    margin-top: 100px;
+    text-align: left;
   }
-
 
   /*work*/
-  #work nav ul li{
-    padding:0 80px;
+  .work_contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .work_title{
-    max-width: 1000px;
-    margin: 50px auto 80px auto;
+  iframe{
+    width:600px;
   }
 
-  .work_title h1{
-    font-size: 2.0rem;
-  }
+}
 
-  /*contact*/
-  #contact nav ul li{
-    padding:0 80px;
-  }
 
-  .contact_title{
-    max-width: 1000px;
-    margin: 50px auto 80px auto;
+@media(min-width:1200px){
+  header nav ul li{
+    padding-left: 120px;
+    padding-right: 120px;
   }
-
-  .contact_title h1{
-    font-size: 2.0rem;
+  iframe{
+    width:800px;
   }
 
 
-
-  /*footer*/
-  footer nav{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 
 }
