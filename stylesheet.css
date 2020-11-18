@@ -209,19 +209,10 @@ body{
 }
 
 /*home*/
-#home header{
-  text-align: center;
-  height:80px;
-  position: fixed;
-  background-color: black;
-  width:100%;
-
-}
 
 .home_contents{
-  height:350px;
   text-align: center;
-  padding-top: 300px;
+  padding:50px 0;
 }
 
 .home_contents h1{
@@ -234,22 +225,6 @@ body{
   color:white;
   font-size: 1.5rem;
   padding-top: 5px;
-}
-
-
-header nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-header nav ul li a{
-  color:white;
-  font-size: 1.2rem;
-}
-
-header nav ul li a:hover{
-  border-bottom: 1px solid white;
 }
 
 
