@@ -209,62 +209,77 @@ body{
 }
 
 /*home*/
+header{
+  height:180px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+header ul {
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  font-size: 1.25rem;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header ul li a{
+  color: black;
+}
 
 .home_contents{
   text-align: center;
-  padding:50px 0;
 }
 
-.home_contents h1{
-  color:white;
-  font-size: 40px;
-
+.home_contents h1 {
+  font-size: 1.25rem;
+  padding-top: 40px;
 }
 
 .home_contents p{
-  color:white;
-  font-size: 1.5rem;
-  padding-top: 5px;
+  font-size: 1.25rem;
 }
 
-
-#home{
-  background-color: black;
-}
 
 /*about*/
 .about{
-  background-image: url(image/beiz1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #EEEEEE;
   padding-bottom: 100px;
 }
 
-
-.about_visual_contents{
+.about h1{
+  font-size: 40px;
   text-align: center;
-
+  padding-top: 150px;
+  padding-bottom: 10px;
 }
+
 
 .about_contents_img{
-  text-align: center;
+  margin: 0 20px;
 }
 .about_contents_img img{
-  width:60%;
-  border-radius: 50%;
+  width:100%;
   margin-top: 100px;
+  border-radius: 5px;
 }
 
-.about_visual_contents h1{
+.about_visual_contents h2{
   font-size: 1.5rem;
   margin-top: 40px;
+  padding-top: 50px;
   margin-bottom: 20px;
-  color:white;
+  margin: 0 20px;
 }
 .about_visual_contents p{
   line-height: 30px;
-  color:white;
+  margin: 0 20px;
+
 
 }
 
@@ -322,11 +337,9 @@ iframe{
 
 footer{
   height:100px;
-  background-color: black;
 }
 
 .footer_contents{
-  color:white;
   line-height: 100px;
   text-align: center;
 }
@@ -340,32 +353,46 @@ li{
 }
 /*タブレット版*/
 @media(min-width:768px){
-  header nav ul li{
-    padding-left: 80px;
-    padding-right: 80px;
+  /*home*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    height:100px;
   }
+  header ul li{
+    display: inline-block;
+  }
+
+  header ul li a{
+    padding:0 20px;
+  }
+
+  .list_img{
+    display: none;
+  }
+
   /*about*/
+.about_contents{
+  display: flex;
+  justify-content: space-between;
+}
 
-  .about_contents{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:50px;
-  }
+.about_visual_contents{
+  padding-top: 100px;
+  margin-right: 40px;
+}
 
-  .about_contents_img img{
-    width:300px;
-  }
+.about_contents_img{
+  margin-left: 40px;
+}
 
-  .about_visual_contents{
-    margin-top: 100px;
-    text-align: left;
-  }
+.about_contents_img img{
+  width:400px;;
+}
+
 
   /*work*/
-  .work_contents{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
 
   iframe{
     width:600px;
@@ -375,13 +402,15 @@ li{
 
 
 @media(min-width:1200px){
-  header nav ul li{
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-  iframe{
-    width:800px;
-  }
+/*about*/
+.about_contents{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about_contents_img img{
+  width:60%;
+}
 
 
 
