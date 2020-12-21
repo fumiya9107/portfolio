@@ -428,7 +428,7 @@ li{
   list-style: none;
 }
 /*タブレット版*/
-@media(min-width:768px){
+@media(min-width:780px){
   /*home*/
 
   .list_img{
