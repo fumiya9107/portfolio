@@ -430,7 +430,7 @@ li{
 /*タブレット版*/
 @media(min-width:768px){
   /*home*/
-  
+
   .list_img{
     display: none;
   }
@@ -457,6 +457,10 @@ li{
 
 
   /*work*/
+  .work_contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 
   iframe{
