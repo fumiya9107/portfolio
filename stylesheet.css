@@ -210,16 +210,17 @@ body{
 
 /*home*/
 header{
-  height:70px;
+  height:100px;
 }
 
   header h1{
       padding-top: 12px;
-      font-size: 24px;
+      font-size: 40px;
       margin:0 20px;
   }
 
   header p{
+    font-size: 20px;
     margin: 0 20px;
   }
 
@@ -237,9 +238,9 @@ header{
   header #menubtn {
         position: absolute;
         display:block;
-        width:13px;
+        width:30px;
         height:13px;
-        top:12px;
+        top:18px;
         right:5%;
         transform: translate(-10%, 0);
         box-sizing:content-box !important;
@@ -316,6 +317,10 @@ header{
     }
     header nav ul li{
         height: 40px;
+    }
+
+    .menuitem a{
+      font-size: 30px;
     }
 
   /*about*/
@@ -451,7 +456,7 @@ a{
     gap:10px;
   }
 
-  
+
   iframe{
     width:600px;
   }
